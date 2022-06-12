@@ -30,7 +30,7 @@ public class Pet {
 
 	@Column(name = "birth_day")
 	@Temporal(TemporalType.DATE)
-	@NotEmpty(message = "esta fecha no puede estar vacia")
+	@NotNull(message = "esta fecha no puede estar vacia")
 	private Date birthDay;
 	public Long getId() {
 		return id;
